@@ -29,6 +29,10 @@ body {
   color: var(--primary-light-text);
 }
 
+.sidebar-item:hover {
+  cursor: pointer;
+}
+
 .fa-layer-group {
   font-size: 32px;
 }
