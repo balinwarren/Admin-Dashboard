@@ -43,9 +43,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 65px;
+  margin-top: 75px;
   margin-left: 15px;
-  gap: 15px;
+  gap: 20px;
 }
 
 .sidebar-icon {
