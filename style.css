@@ -82,7 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 50px;
-  gap: 15px;
+  gap: 25px;
   color: var(--primary-dark-text);
 }
 
@@ -90,6 +90,9 @@ body {
   font-weight: 600;
 }
 
+.header-item > .fa-bell {
+  font-size: 20px;
+}
 input[type="text"] {
   border: none;
   background-color: #d1d5db;
@@ -107,4 +110,11 @@ input[type="text"]:hover {
 input[type="text"]:focus {
   outline: none;
   padding: 0 15px;
+}
+
+.profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
