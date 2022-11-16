@@ -3,6 +3,7 @@
  :root {
   --primary-color: #8b5cf6;
   --primary-light-text: #f8fafc;
+  --primary-dark-text: #0f172a;
  }
 
 body {
@@ -70,8 +71,23 @@ body {
   height: 200px;
 }
 
+.upper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 50px;
+  gap: 15px;
+  color: var(--primary-dark-text);
+}
+
+.header-item > p {
+  font-weight: 600;
 }
 
 input[type="text"] {
@@ -80,11 +96,15 @@ input[type="text"] {
   width: 750px;
   height: 25px;
   border-radius: 15px;
-  margin-left: 15px;
   transition: transform 0.1s ease-in-out;
 }
 
 input[type="text"]:hover {
   transform: scale(1.013);
   cursor: pointer;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  padding: 0 15px;
 }
