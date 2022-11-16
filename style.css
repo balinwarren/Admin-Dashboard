@@ -70,6 +70,7 @@ body {
   width: calc(100vw - 300px);
   height: 200px;
   gap: 30px;
+  margin: 0;
 }
 
 .upper-header, .lower-header {
@@ -143,4 +144,21 @@ input[type="text"]:focus {
 
 .name {
   font-size: 30px;
+}
+
+.btn {
+  width: 100px;
+  height: 35px;
+  background-color: var(--primary-color);
+  color: var(--primary-light-text);
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.1s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
