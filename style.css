@@ -191,6 +191,7 @@ input[type="text"]:focus {
   flex-direction: column;
   background-color: var(--primary-light-text);
   box-shadow: 0 30px 60px rgba(0,0,0,.2);
+  border-radius: 20px;
 }
 
 .percent-card > .percent {
