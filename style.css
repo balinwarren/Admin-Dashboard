@@ -5,6 +5,7 @@
   --primary-light-text: #f8fafc;
   --primary-dark-text: #0f172a;
   --secondary-light: #d1d5db;
+  --secondary-dark: #737373;
  }
 
 body {
@@ -16,7 +17,7 @@ body {
 .container {
   display: grid;
   background-color: var(--secondary-light);
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 6fr;
 }
 
@@ -179,12 +180,17 @@ input[type="text"]:focus {
   padding: 30px;
   grid-area: 2 2 / 3 3;
   gap: 30px;
-  grid-template-columns: 3fr 3fr 2fr;
+  grid-template-columns: 6fr 2fr;
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .percent-card {
   position: relative;
-  grid-area: 1 1 / 2 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,6 +198,7 @@ input[type="text"]:focus {
   background-color: var(--primary-light-text);
   box-shadow: 0 30px 60px rgba(0,0,0,.2);
   border-radius: 20px;
+  padding: 20px;
 }
 
 .percent-card > .percent {
@@ -242,7 +249,7 @@ input[type="text"]:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primary-dark-text);
+  color: var(--secondary-dark);
 }
 
 .percent-card > .percent > .number > h2 {
@@ -257,4 +264,79 @@ input[type="text"]:focus {
   padding: 10px 0 0;
   color: var(--primary-dark-text);
   font-weight: 700;
+}
+
+.side-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--primary-light-text);
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+  border-radius: 20px;
+  padding: 35px;
+}
+
+.side > p{
+  margin: 2px 0;
+  color: var(--secondary-dark);
+  font-size: 15px;
+}
+
+.side > h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.side > hr {
+  border: 1px solid var(--secondary-light);
+  width: 100%;
+  margin: 18px 0;
+  opacity: 60%;
+}
+
+.profile-container {
+  gap: 30px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile > .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.wrapper > h6{
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--primary-dark-text);
+}
+
+.wrapper > p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--secondary-dark);
+}
+
+.profile > img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
