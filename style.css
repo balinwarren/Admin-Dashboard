@@ -176,5 +176,79 @@ input[type="text"]:focus {
 
 .dash-container {
   display: grid;
-  
+  padding: 30px;
+  grid-area: 2 2 / 3 3;
+  gap: 30px;
+  grid-template-columns: 3fr 3fr 2fr;
+}
+
+.percent-card {
+  position: relative;
+  grid-area: 1 1 / 2 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-light-text);
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+
+.percent-card > .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.percent-card > .percent > svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.percent-card > .percent > svg > circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: var(--primary-color);
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.percent-card > .percent > svg > circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: var(--secondary-light);
+}
+
+.percent-card > .percent > svg > circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  stroke: var(--primary-color);
+}
+
+.percent-card > .percent > .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-dark-text);
+}
+
+.percent-card > .percent > .number > h2 {
+  font-size: 38px;
+}
+
+.percent-card > .percent > .number > h2 > span {
+  font-size: 20px;
+}
+
+.percent-card > .text {
+  padding: 10px 0 0;
+  color: var(--primary-dark-text);
+  font-weight: 700;
 }
