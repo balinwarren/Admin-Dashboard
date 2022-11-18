@@ -223,8 +223,13 @@ input[type="text"]:focus {
   stroke: var(--secondary-light);
 }
 
-.percent-card > .percent > svg > circle:nth-child(2) {
+#tasks {
   stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  stroke: var(--primary-color);
+}
+
+#projects {
+  stroke-dashoffset: calc(440 - (440 * 64) / 100);
   stroke: var(--primary-color);
 }
 
