@@ -17,7 +17,7 @@ body {
   display: grid;
   background-color: var(--secondary-light);
   grid-template-rows: 1fr 4fr;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 6fr;
 }
 
 .header-container {
@@ -29,7 +29,7 @@ body {
   padding-bottom: 30px;
   grid-area: 1 / 2 / 2 / 3;
   background-color: var(--primary-light-text);
-  box-shadow: 0 2px 5px 5px rgba(0,0,0,.2);
+  box-shadow: 0 1px 5px 4px rgba(0,0,0,.2);
 }
 
 .upper-header, .lower-header {
@@ -172,4 +172,9 @@ input[type="text"]:focus {
   font-weight: 600;
   font-size: 20px;
   margin: 0 15px;
+}
+
+.dash-container {
+  display: grid;
+  
 }
