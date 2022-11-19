@@ -190,7 +190,7 @@ input[type="text"]:focus {
   gap: 30px;
 }
 
-.percent-card {
+.percent-card{
   position: relative;
   display: flex;
   justify-content: center;
@@ -340,4 +340,58 @@ input[type="text"]:focus {
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.info-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-light-text);
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+  border-radius: 20px;
+}
+
+.info-container > a > img{
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.info-container > .text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-wrap > p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--secondary-dark);
+}
+
+.text-wrap > h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--primary-dark-text);
+}
+
+.card-edge {
+  width: 65px;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 20px 0 0 20px;
 }
