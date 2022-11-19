@@ -185,7 +185,8 @@ input[type="text"]:focus {
 
 .main-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 250px 500px;
   gap: 30px;
 }
 
@@ -268,7 +269,7 @@ input[type="text"]:focus {
 
 .side-cards {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 375px 375px;
   gap: 30px;
 }
 
